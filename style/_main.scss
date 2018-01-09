@@ -1,0 +1,31 @@
+// This is the main css file
+
+#page-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 400px auto 200px;
+    grid-template-areas: "header header header header"
+    "hero hero hero hero"
+    "content content content content "
+    "footer footer footer footer ";
+  }
+
+#page-header {
+    grid-area: header;
+    background-color: $bg-header;
+}
+
+#page-hero {
+    grid-area: hero;
+    background-color: $bg-hero;
+}
+
+#page-content {
+    grid-area: content;
+    background-color: $bg-content;
+}
+
+#page-footer {
+    grid-area: footer;
+    background-color: $bg-footer;
+}

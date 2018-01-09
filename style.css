@@ -1,0 +1,21 @@
+#page-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto 400px auto 200px;
+  grid-template-areas: "header header header header" "hero hero hero hero" "content content content content " "footer footer footer footer "; }
+
+#page-header {
+  grid-area: header;
+  background-color: #ffffff; }
+
+#page-hero {
+  grid-area: hero;
+  background-color: #58355E; }
+
+#page-content {
+  grid-area: content;
+  background-color: #ffffff; }
+
+#page-footer {
+  grid-area: footer;
+  background-color: #000; }
